@@ -1,0 +1,16 @@
+name: Rank
+version: 1.4.0
+main: net.lawaxi.rank.Rank
+prefix: Rank
+commands:
+  setrank:
+    description: 设置等级
+    usage: /setrank Lawaxi vip
+    permission: rank.set
+  addexp:
+    description: 添加经验
+    usage: /addexp Lawaxi 100
+    permission: rank.add
+  level:
+    description: 查询当前等级
+    usage: /level 玩家名(可省略)

@@ -1,0 +1,34 @@
+types:
+  default:
+    level: 0
+    name: §7默认
+    list: §7%player%
+    chat: §7%player%
+  vip:
+    level: 1
+    name: §aVIP
+    list: §a[VIP] %player%
+    chat: §a[VIP] %player%
+  mvp:
+    level: 2
+    name: §6MVP
+    list: §6[MVP] %player%
+    chat: §6[MVP] %player%
+  helper:
+    level: 2
+    name: §9HELPER
+    list: §9[HELPER] %player%
+    chat: §9[HELPER] %player%
+  admin:
+    level: 3
+    name: §cADMIN
+    list: §c[ADMIN] %player%
+    chat: §c[ADMIN] %player%
+  owner:
+    level: 4
+    name: §4OWNER
+    list: §4[OWNER] %player%
+    chat: §4[OWNER] %player%
+level:
+  shout: 2
+  admin: 4
