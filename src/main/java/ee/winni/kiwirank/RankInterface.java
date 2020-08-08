@@ -24,4 +24,6 @@ public interface RankInterface {
      String getRank(String player);
 
      int getRankLevel(String rank);
+
+     boolean isAdmin(String player);
 }

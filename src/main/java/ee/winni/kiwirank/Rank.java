@@ -129,6 +129,10 @@ public final class Rank extends JavaPlugin implements RankInterface, Listener {
         // Plugin shutdown logic
     }
 
+    public boolean isAdmin(String player){
+        return getRankLevel(getRank(player))>=ranks.getInt("level.admin");
+    }
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
@@ -136,7 +140,7 @@ public final class Rank extends JavaPlugin implements RankInterface, Listener {
         if(command.getName().equals("setrank")) {
 
             if(sender instanceof Player){
-                if(getRankLevel(getRank(sender.getName()))<ranks.getInt("level.admin")){
+                if(!isAdmin(sender.getName())){
                     sender.sendMessage("Unknown command. Type \"/help\" for help.");
                     return true;
                 }
@@ -164,7 +168,7 @@ public final class Rank extends JavaPlugin implements RankInterface, Listener {
         else if(command.getName().equals("addexp")){
 
             if(sender instanceof Player){
-                if(getRankLevel(getRank(sender.getName()))<ranks.getInt("level.admin")){
+                if(!isAdmin(sender.getName())){
                     sender.sendMessage("Unknown command. Type \"/help\" for help.");
                     return true;
                 }
@@ -207,7 +211,6 @@ public final class Rank extends JavaPlugin implements RankInterface, Listener {
 
         return super.onCommand(sender, command, label, args);
     }
-
 
     public void reloadPlayerRanks(Player player1){
         ranks = YamlConfiguration.loadConfiguration(rank);
