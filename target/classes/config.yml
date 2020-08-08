@@ -1,0 +1,21 @@
+#Rank插件 配置文件
+messages:
+  addexp1:
+    - §a您获得了%1%经验，距离升级到%2%还差%3%经验.
+  addexp2:
+    - §a您获得了%1%经验，成功升级到%2%，距离下一级还差%3%经验.
+  addexp3:
+    - §a您已经满级，无法添加经验.
+  inquire: §a玩家 %1% 当前等级 %2% §a(经验%3%).
+  inquirefailed: §c玩家不存在!
+scoreboard:
+  title: §b搭路练习
+  list:
+    - '§1'
+    - '§f身份: %rank%'
+    - '§f等级:§a %level%'
+    - '§2'
+    - '§f当前服务器: §bxxx'
+    - '§3'
+    - '§emc.example.org'
+allow-scoreboard: true

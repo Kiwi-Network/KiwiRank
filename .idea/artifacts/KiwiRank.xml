@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="KiwiRank">
+    <output-path>$PROJECT_DIR$/out/artifacts/KiwiRank</output-path>
+    <root id="archive" name="KiwiRank.jar">
+      <element id="module-output" name="kiwirank" />
+    </root>
+  </artifact>
+</component>

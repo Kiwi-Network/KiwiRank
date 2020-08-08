@@ -1,0 +1,5 @@
+common:
+  player: "%player2%"
+  message: "§7: %message%"
+playertext: "§a%player1%\n§f身份: %rank%\n§f等级: %level%"
+playertextin: "/p %player%"
