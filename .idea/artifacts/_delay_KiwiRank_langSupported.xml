@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="[delay]KiwiRank-langSupported">
+    <output-path>$PROJECT_DIR$/out/artifacts/_delay_KiwiRank_langSupported</output-path>
+    <root id="archive" name="[delay]KiwiRank-langSupported.jar">
+      <element id="module-output" name="kiwirank" />
+    </root>
+  </artifact>
+</component>
