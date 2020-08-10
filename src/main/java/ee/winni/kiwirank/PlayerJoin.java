@@ -11,6 +11,8 @@ public final class PlayerJoin implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event)
     {
+        event.setJoinMessage("");
+
         Rank.instance.reloadPlayerLevels(event.getPlayer());
 
         if(Rank.config.getBoolean("allow-scoreboard"))

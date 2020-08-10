@@ -1,6 +1,5 @@
 package ee.winni.kiwirank;
 
-import ee.winni.plugins.languageslib.LLB;
 import ee.winni.plugins.languageslib.LLBInterface;
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
